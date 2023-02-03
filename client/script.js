@@ -80,8 +80,8 @@ const handleSubmit = async (e) => {
   loader(messageDiv);
 
   // Fetching the response from the server
-  
-  const response = await fetch('http://localhost:5000', {
+  const apiUrl = 'https://codex-chat-server.onrender.com/';
+  const response = await fetch(apiUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
